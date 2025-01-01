@@ -1,0 +1,148 @@
+:root{
+    --main-color: rgb(0, 187, 187) ;
+    --bg-color: rgb(2, 129, 129);
+}
+span{
+    color: var(--main-color);
+}
+
+li:hover{
+    color: var(--main-color);
+}
+.carousel-indicators [data-bs-target]{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+.carousel-indicators [data-bs-target]:focus{
+    background-color: var(--bg-color);
+}
+.carousel-indicators [data-bs-target]:active{
+    background-color: var(--bg-color);
+}
+.text-bg-primary{
+    background-color: var(--bg-color) !important; 
+}
+.text-bg-secondary{
+    background-color: rgb(2, 150, 150) !important; 
+}
+.text-bg-success{
+    background-color: rgb(3, 173, 173) !important; 
+}
+
+.icon-in-card{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    background-color:var(--main-color) ;
+}
+.fx{
+    font-size: 2rem;
+}
+
+.card-header:first-child,.card-footer:last-child{
+    color: aliceblue;
+    background-color: var(--bg-color) !important;
+}
+
+.position-absolute{
+    right: 0;
+    bottom: 0;
+}
+.master-circle{
+    position: relative;
+}
+.circle{
+    width: 11vh;
+    height: 11vh;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 300px;
+    top: -25px;
+}
+hr{
+    margin: 8px 0 8px 0;
+}
+.btn-primary{
+    background-color: var(--bg-color);
+}
+
+nav a{
+    position: relative;
+}
+nav a::before{
+    content: '';
+    position: absolute;
+    bottom: 36px;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: var(--bg-color);
+    transition: all .5s;
+}
+nav a:hover::before{
+    width: 100%;
+}
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+} */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.image {
+    width: 15%; /* Adjust width as needed */
+    height: 20vh;
+    margin: 1%;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.image:hover {
+    filter: grayscale(0%);
+}
+
+.section-black{
+    background-color: rgb(41, 41, 41);
+}
+a{
+    color: aliceblue;
+}
+
+footer{
+background-color:rgb(27, 27, 27); ;
+}
+/* .mute{
+    background-color: rgb(211, 211, 211);
+    
+} */
+
+/* .btn-primary{
+    background-color: transparent;
+    border: none;
+    color: #0d6efd;
+}
+
+.btn-primary:hover{
+background-color: #0d6efd;
+color: #fff;
+}
+
+.card{
+    border-color: transparent !important;
+}
+.card-footer{
+    background-color: transparent;
+    border-color: transparent !important;
+} */
