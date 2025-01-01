@@ -32,7 +32,7 @@ const loading = document.querySelector(".loading");
 
 let currentPage = 1;
 const pageSize = 5; // Number of articles per page
-loading.classList.remove("d-none");
+// loading.classList.remove("d-none");
 function getNews(page = 1) {
     fetch(`https://newsapi.org/v2/top-headlines?country=us&page=${page}&pageSize=${pageSize}&apiKey=17c31977157e4788851974f66f2b9755`)
         .then(a => a.json())
@@ -56,7 +56,7 @@ function getNews(page = 1) {
                 </div>
                 `;
             });
-            loading.classList.add("d-none");
+            // loading.classList.add("d-none");
             document.getElementById('page-number').textContent = `Page ${page}`;
             document.getElementById('prev-page').disabled = page === 1;
             document.getElementById('next-page').disabled = page >= Math.ceil(response.totalResults / pageSize);
